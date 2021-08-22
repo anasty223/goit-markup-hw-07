@@ -1,37 +1,20 @@
-:root {
-  --primery-texte-color: #757575; /*Основной цвет */
-  --second-color: #212121; /* Второй цвет  */
-  --accent-color: #2196f3; /*Акцентный цвет */
-  --whitw-color-texte: #ffffff;
-  --hero-footer-color: #2f303a; /*Цвет в футере и блоке герой */
-  --secondery-backgraund: #f5f4fa; /*цвет фона в блоке наша команда*/
-}
-.body {
-  font-family: 'Roboto', sans-serif;
-  background: white;
-  font-size: 14px;
-  color: var(--primery-texte-color);
-  letter-spacing: 0.03em;
-}
-.list {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0px;
-}
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+
+//base
+@import 'base/normalize';
+
+//components
+
+@import 'components/colors';
+
+//layout
+
+
+//pages
+
+
+
+
+
 .container {
   width: 1200px;
   margin-right: auto;
@@ -55,7 +38,7 @@ img {
 }
 /*logo*/
 .logo-header {
-  color: var(--accent-color);
+  color:  $accent-color ;
   font-family: raleway;
   text-decoration: none;
   font-weight: 700;
@@ -64,7 +47,7 @@ img {
   margin-right: 93px;
 }
 .logo-header__text {
-  color: var(--second-color);
+  color:  $second-color ;
 }
 /*секция навигация*/
 .main-nav {
@@ -85,13 +68,13 @@ img {
 .navigation_link {
   position: relative;
 
-  color: var(--second-color);
+  color:  $second-color ;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
   font-weight: 500;
   display: block;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1 ) ;
 }
 
 .navigation_link::after {
@@ -113,10 +96,10 @@ img {
 
  .navigation_link:hover,
  .navigation_link:focus {
-  color: var(--accent-color);
+  color:  $accent-color;
 }
 .current {
-  color: var(--accent-color);
+  color:  $accent-color;
 }
 .navigation.current::after:hover {
   width: 40px;
@@ -141,7 +124,7 @@ img {
   margin-right: 50px;
 }
 .contacts_link {
-  color: var(--primery-texte-color);
+  color:  $primery-color;
   text-decoration: none;
   line-height: 1.1;
   letter-spacing: 0.02em;
@@ -151,10 +134,10 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts_link:hover {
-  color: var(--accent-color);
+  color:  $accent-color;
 }
 .contacts_icon:hover {
-  fill: var(--accent-color);
+  fill:  $accent-color;
 }
 
 /* Секция герой */
@@ -165,7 +148,7 @@ img {
   padding-bottom: 200px;
   padding-left: 0;
   padding-right: 0;
-  background: var(--hero-footer-color);
+  background:  $hero-footer-color;
 }
 
 .hero-box {
@@ -178,7 +161,7 @@ img {
 }
 
 .hero_title {
-  color: var(--whitw-color-texte);
+  color:  $whitw-color;
   font-size: 44px;
   line-height: 1.4;
   letter-spacing: 0.06em;
@@ -200,8 +183,8 @@ img {
   line-height: 1.86;
   letter-spacing: 0.06em;
   cursor: pointer;
-  color: var(--whitw-color-texte);
-  background-color: var(--accent-color);
+  color:  $whitw-color;
+  background-color:  $accent-color;
   padding: 10px 32px;
   border-radius: 4px;
   border: none;
@@ -251,7 +234,7 @@ img {
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  color: var(--second-color);
+  color:  $second-color;
 
   margin-bottom: 10px;
   margin-right: 30px;
@@ -261,7 +244,7 @@ img {
   margin-right: 30px;
 }
 .features-box__text {
-  color: var(--primery-texte-color);
+  color:  $primery-color;
   font-weight: 400;
   line-height: 1.1;
 }
@@ -276,7 +259,7 @@ img {
   position: relative;
 }
 .work__title {
-  color: var(--second-color);
+  color:  $second-color;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -300,8 +283,8 @@ img {
   text-align: center;
   padding-top: 27px;
   text-transform: uppercase;
-  color: var(--whitw-color-texte);
-  background: rgba(47, 48, 58, 0.8);
+  color:  $whitw-color ;
+  background: rgba(100, 104, 153, 0.8);
 }
 
 .work__item:not(:last-child) {
@@ -310,13 +293,13 @@ img {
 /* Секция наша команда */
 
 .team-section {
-  background: var(--secondery-backgraund);
+  background-color:  $secondery-backgraund;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .team__title {
-  color: var(--second-color);
+  color:  $second-color;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -337,7 +320,7 @@ img {
   padding: 30px 32px;
 }
 .team__item {
-  background-color: var(--whitw-color-texte);
+  background-color:  $whitw-color  ;
 }
 .team__item:not(:last-child) {
   margin-right: 30px;
@@ -345,7 +328,7 @@ img {
 
 .team-card__name {
   font-size: 16px;
-  color: var(--second-color);
+  color:  $second-color ;
   line-height: 1.8;
   font-weight: 500;
   text-align: center;
@@ -353,7 +336,7 @@ img {
   margin-bottom: 10px;
 }
 .team-card__position {
-  color: var(--primery-texte-color);
+  color:  $primery-color ;
   font-weight: 400;
   line-height: 1.8;
   font-size: 16px;
@@ -382,11 +365,11 @@ img {
 }
 .team-social__link:hover .team-social__icon,
 .team-social__link:focus .team-social__icon {
-  fill: var(--whitw-color-texte);
+  fill:  $whitw-color  ;
 }
 .team-social__link:hover,
 .team-social__link:focus {
-  background-color: var(--accent-color);
+  background-color:  $accent-color ;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -399,7 +382,7 @@ img {
   padding-bottom: 94px;
 }
 .clients__title {
-  color: var(--second-color);
+  color:  $second-color ;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -434,17 +417,17 @@ img {
 }
 .clients__link:hover,
 .clients__link:focus {
-  border: 1px solid var(--accent-color);
-  fill: var(--accent-color);
+  border: 1px solid  $accent-color ;
+  fill:  $accent-color ;
 }
 .clients__link:hover .clients__icon,
 .clients__link:focus .clients__icon {
-  fill: var(--accent-color);
+  fill:  $accent-color ;
 }
 /* Футер */
 
 .footer-section{
-  background: var(--hero-footer-color);
+  background:  $hero-footer-color ;
   padding-bottom: 60px;
   padding-top: 72px;
 }
@@ -458,7 +441,7 @@ img {
   display: flex;
 }
 .logo-footer {
-  color: var(--accent-color);
+  color:  $accent-color ;
   text-decoration: none;
   font-family: Raleway;
   line-height: 1.19;
@@ -468,13 +451,13 @@ img {
   display: block;
 }
 .logo-footer-text {
-  color: var(--whitw-color-texte);
+  color:  $whitw-color  ;
   margin-bottom: 20px;
 }
 /* adress */
 
 .adress  {
-  color: var(--whitw-color-texte);
+  color:  $whitw-color  ;
   font-style: normal;
   font-weight: 400;
   line-height: 1.7;
@@ -495,7 +478,7 @@ img {
 }
 .footer-contacts:hover,
 .footer-contacts:focus {
-  color: var(--accent-color);
+  color:  $accent-color ;
 }
 
 /* join  */
@@ -507,7 +490,7 @@ img {
 .join__title{
   line-height: 1.15;
   text-transform: uppercase;
-  color: var(--whitw-color-texte);
+  color:  $whitw-color ;
   font-style: normal;
   margin-bottom: 20px;
 }
@@ -534,10 +517,10 @@ img {
 }
 .join-social__link:hover,
 .join-social__link:focus {
-  background-color: var(--accent-color);
+  background-color:  $accent-color ;
 }
 .join-social__icon {
-  fill: var(--whitw-color-texte);
+  fill:  $whitw-color  ;
   padding: 0;
   width: 20px;
   height: 20px;
@@ -560,13 +543,13 @@ img {
 .footer-sibscribe__form {
   line-height: 1.15;
   text-transform: uppercase;
-  color: var(--whitw-color-texte);
+  color:  $whitw-color ;
   font-style: normal;
 }
 .footer-sibscribe__title{
   line-height: 1.15;
   text-transform: uppercase;
-  color: var(--whitw-color-texte);
+  color:  $whitw-color  ;
   font-style: normal;
   margin-bottom: 20px;
 }
@@ -586,14 +569,14 @@ img {
 .footer-btn {
   width: 200px;
   height: 50px;
-  background-color: var(--accent-color);
+  background-color:  $accent-color ;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
   text-align: center;
   letter-spacing: 0.06em;
   border: none;
-  color: var(--whitw-color-texte);
+  color:  $whitw-color  ;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin-left: 12px;
@@ -735,13 +718,13 @@ transform: translateY(-50%);
 
 }
 .form__input:focus ~.form__icon{
-  fill: var(--accent-color);
+  fill:  $accent-color;
 }
 
 
 
 .form__input:focus{
-  border: 1px solid var(--accent-color);
+  border: 1px solid  $accent-color;
 }
 .textarea{
 
@@ -767,7 +750,7 @@ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__input-textarea:focus{
-  border: 1px solid var(--accent-color);
+  border: 1px solid  $accent-color;
 }
 .form__input-textarea::placeholder {
 font-weight: normal;
@@ -811,11 +794,11 @@ color: rgba(117, 117, 117, 0.5);
 }
 .checkbox__input:checked + .checkbox__icon{
   background-image: url(../image/icon-check.svg);
-  background-color: var(--accent-color);
+  background-color:  $accent-color;
   border: none;
 }
 .checkbox__input:focus + .checkbox__icon{
-  border-color: var(--accent-color);
+  border-color:  $accent-color;
 }
 
 .checkbox__link{
@@ -825,7 +808,7 @@ line-height: 24px;
 letter-spacing: 0.03em;
 text-decoration-line: underline;
 
-color: var(--accent-color);
+color:  $accent-color;
 }
 
 .modal-btn-submit {
@@ -837,8 +820,8 @@ color: var(--accent-color);
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--whitw-color-texte);
-  background: var(--accent-color);
+  color:  $whitw-color;
+  background:  $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
@@ -877,7 +860,7 @@ color: var(--accent-color);
   letter-spacing: 0.03em;
   cursor: pointer;
 
-  background-color: var(--secondery-backgraund);
+  background-color:  $secondery-backgraund;
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
@@ -891,13 +874,13 @@ color: var(--accent-color);
 .portfolio-button__text:focus {
   background-color: #188ce8;
   text-decoration: none;
-  color: var(--whitw-color-texte);
+  color:  $whitw-color;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* portfolio-box  */
 .portfolio-box {
-  color: var(--second-color);
+  color:  $second-color;
 
   display: flex;
   flex-wrap: wrap;
@@ -931,7 +914,7 @@ color: var(--accent-color);
   position: absolute;
   width: 100%;
   height: 100%;
-  color: var(--whitw-color-texte);
+  color:  $whitw-color;
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.03em;
@@ -945,11 +928,11 @@ color: var(--accent-color);
 }
 
 
-.portfolio-box__link:hover,
-.portfolio-box__link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+// .portfolio-box__link:hover,
+// .portfolio-box__link:focus {
+//   box-shadow: 0px 1px 1px rgba(0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+//     1px 4px 6px rgba(0, 0, 0, 0.16);
+// }
 .card-content {
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
@@ -962,7 +945,7 @@ color: var(--accent-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--second-color);
+  color:  $second-color;
   text-decoration: none;
 
   margin-bottom: 4px;
@@ -971,5 +954,5 @@ color: var(--accent-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.87;
-  color: var(--primery-texte-color);
+  color:  $primery-color;
 }
