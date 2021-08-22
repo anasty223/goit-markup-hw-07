@@ -38,15 +38,6 @@ a {
 /*Акцентный цвет */
 /*Цвет в футере и блоке герой */
 /*цвет фона в блоке наша команда*/
-.container {
-  width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* page-header */
 .page-header {
   border-bottom: 1px solid #ececec;
   padding-top: 24px;
@@ -197,7 +188,6 @@ a {
   fill: #2196f3;
 }
 
-/* Секция герой */
 .hero {
   text-align: center;
   padding-top: 200px;
@@ -247,13 +237,16 @@ a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button:hover,
+.hero-button:hover {
+  background-color: #188ce8;
+  text-decoration: none;
+}
+
 .hero-button:focus {
   background-color: #188ce8;
   text-decoration: none;
 }
 
-/* Особенности */
 .features-section {
   padding-bottom: 94px;
   padding-top: 94px;
@@ -322,7 +315,6 @@ a {
   height: 101px;
 }
 
-/* Чем мы занимаемся */
 .work-section {
   padding-bottom: 94px;
   padding-top: 94px;
@@ -364,7 +356,6 @@ a {
   margin-right: 30px;
 }
 
-/* Секция наша команда */
 .team-section {
   background-color: #f5f4fa;
   padding-top: 94px;
@@ -478,7 +469,6 @@ a {
           align-items: center;
 }
 
-/* Наши клиенты */
 .clients-section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -546,7 +536,6 @@ a {
   fill: #2196f3;
 }
 
-/* Футер */
 .footer-section {
   background: #2f303a;
   padding-bottom: 60px;
@@ -644,7 +633,7 @@ a {
 
 .join-social__link {
   border-radius: 50%;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -756,7 +745,6 @@ a {
   text-decoration: none;
 }
 
-/* modal */
 .backdrop {
   position: fixed;
   top: 0;
@@ -1032,7 +1020,6 @@ a {
   margin: auto;
 }
 
-/* portfolio */
 .portfolio-section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -1089,7 +1076,6 @@ a {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* portfolio-box  */
 .portfolio-box {
   color: #212121;
   display: -webkit-box;
@@ -1105,8 +1091,8 @@ a {
 }
 
 .portfolio-box__item {
-  -ms-flex-preferred-size: calc((100% / 3)- 30px);
-      flex-basis: calc((100% / 3)- 30px);
+  -ms-flex-preferred-size: calc(100% / 3 - 30px);
+      flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -1152,6 +1138,12 @@ a {
           transform: translateY(-100%);
 }
 
+.portfolio-box__link:hover,
+.portfolio-box__link:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .card-content {
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
@@ -1175,5 +1167,13 @@ a {
   font-weight: 400;
   line-height: 1.87;
   color: #757575;
+}
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /*# sourceMappingURL=main.css.map */

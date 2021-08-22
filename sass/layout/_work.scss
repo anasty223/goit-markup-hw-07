@@ -1,0 +1,37 @@
+.work-section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  position: relative;
+}
+.work__title {
+  color:  $second-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  display: block;
+
+  margin-bottom: 50px;
+}
+.work{
+  display: flex;
+  position: relative;
+}
+.work__text {
+  position: absolute;
+  bottom: 0;
+
+  height: 70px;
+  width: 370px;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+  padding-top: 27px;
+  text-transform: uppercase;
+  color:  $whitw-color ;
+  background: rgba(100, 104, 153, 0.8);
+}
+
+.work__item:not(:last-child) {
+  margin-right: 30px;
+}
