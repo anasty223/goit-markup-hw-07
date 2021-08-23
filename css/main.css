@@ -19,14 +19,6 @@ a {
   text-decoration: none;
 }
 
-.body {
-  font-family: 'Roboto', sans-serif;
-  background: white;
-  font-size: 14px;
-  color: #757575;
-  letter-spacing: 0.03em;
-}
-
 .list {
   list-style: none;
   padding: 0px;
@@ -105,6 +97,7 @@ a {
   display: block;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: roboto, sans-serif;
 }
 
 .navigation_link::after {
@@ -178,6 +171,7 @@ a {
           align-items: center;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: roboto, sans-serif;
 }
 
 .contacts_link:hover {
@@ -215,6 +209,7 @@ a {
   text-transform: uppercase;
   font-weight: 900;
   width: 696px;
+  font-family: roboto, sans-serif;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -222,7 +217,7 @@ a {
 
 .hero-button {
   text-decoration: none;
-  font-family: inherit;
+  font-family: roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.86;
@@ -296,11 +291,8 @@ a {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: #212121;
+  font-family: roboto, sans-serif;
   margin-bottom: 10px;
-  margin-right: 30px;
-}
-
-.features__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -308,11 +300,16 @@ a {
   color: #757575;
   font-weight: 400;
   line-height: 1.1;
+  font-family: roboto, sans-serif;
 }
 
 .features__item {
   width: 270px;
   height: 101px;
+}
+
+.features__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .work-section {
@@ -341,6 +338,7 @@ a {
 .work__text {
   position: absolute;
   bottom: 0;
+  font-family: roboto, sans-serif;
   height: 70px;
   width: 370px;
   font-size: 14px;
@@ -370,6 +368,7 @@ a {
   text-align: center;
   display: block;
   margin-bottom: 50px;
+  font-family: roboto, sans-serif;
 }
 
 .team {
@@ -403,6 +402,7 @@ a {
   line-height: 1.8;
   font-weight: 500;
   text-align: center;
+  font-family: roboto, sans-serif;
   margin-bottom: 10px;
 }
 
@@ -411,6 +411,7 @@ a {
   font-weight: 400;
   line-height: 1.8;
   font-size: 16px;
+  font-family: roboto, sans-serif;
   text-align: center;
   margin-bottom: 16px;
 }
@@ -441,21 +442,7 @@ a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-social__icon {
-  fill: #afb1b8;
-  width: 20px;
-  height: 20px;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team-social__link:hover .team-social__icon,
-.team-social__link:focus .team-social__icon {
-  fill: #ffffff;
-}
-
-.team-social__link:hover,
-.team-social__link:focus {
+.team-social__link:hover, .team-social__link:focus {
   background-color: #2196f3;
   border-radius: 50%;
   display: -webkit-box;
@@ -467,6 +454,19 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.team-social__icon {
+  fill: #afb1b8;
+  width: 20px;
+  height: 20px;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-social__link:hover .team-social__icon,
+.team-social__link:focus .team-social__icon {
+  fill: #ffffff;
 }
 
 .clients-section {
@@ -482,6 +482,7 @@ a {
   text-align: center;
   display: block;
   margin-bottom: 50px;
+  font-family: roboto, sans-serif;
 }
 
 .clients {
@@ -517,6 +518,11 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.clients__link:hover, .clients__link:focus {
+  border: 1px solid #2196f3;
+  fill: #2196f3;
+}
+
 .clients__icon {
   fill: #afb1b8;
   width: 106px;
@@ -525,14 +531,8 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__link:hover,
-.clients__link:focus {
-  border: 1px solid #2196f3;
-  fill: #2196f3;
-}
-
-.clients__link:hover .clients__icon,
-.clients__link:focus .clients__icon {
+.clients__link:hover.clients__icon,
+.clients__link:focus.clients__icon {
   fill: #2196f3;
 }
 
@@ -582,6 +582,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 1.7;
+  font-family: roboto, sans-serif;
 }
 
 .adress__item:not(:last-child) {
@@ -595,12 +596,12 @@ a {
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 9px;
+  font-family: roboto, sans-serif;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-contacts:hover,
-.footer-contacts:focus {
+.footer-contacts:hover, .footer-contacts:focus {
   color: #2196f3;
 }
 
@@ -616,6 +617,7 @@ a {
   color: #ffffff;
   font-style: normal;
   margin-bottom: 20px;
+  font-family: roboto, sans-serif;
 }
 
 .join-social {
@@ -649,8 +651,7 @@ a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.join-social__link:hover,
-.join-social__link:focus {
+.join-social__link:hover, .join-social__link:focus {
   background-color: #2196f3;
 }
 
@@ -692,6 +693,7 @@ a {
   color: #ffffff;
   font-style: normal;
   margin-bottom: 20px;
+  font-family: roboto, sans-serif;
 }
 
 .footer-sibscribe__input {
@@ -705,6 +707,7 @@ a {
   margin: 0;
   text-decoration: none;
   border: none;
+  font-family: roboto, sans-serif;
 }
 
 /* footer-btn  */
@@ -728,6 +731,12 @@ a {
   padding-left: 29px;
   text-decoration: none;
   border: none;
+  font-family: roboto, sans-serif;
+}
+
+.footer-btn:hover, .footer-btn:focus {
+  background-color: #188ce8;
+  text-decoration: none;
 }
 
 .footer-btn__icon {
@@ -737,12 +746,6 @@ a {
   display: inline-block;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-}
-
-.footer-btn:hover,
-.footer-btn:focus {
-  background-color: #188ce8;
-  text-decoration: none;
 }
 
 .backdrop {
@@ -815,6 +818,7 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  font-family: roboto, sans-serif;
 }
 
 /* Форма */
@@ -833,6 +837,7 @@ a {
 
 .form__label {
   font-weight: normal;
+  font-family: roboto, sans-serif;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
@@ -864,6 +869,10 @@ a {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form__input:focus {
+  border: 1px solid #2196f3;
+}
+
 .form__icon {
   position: absolute;
   top: 50%;
@@ -872,12 +881,8 @@ a {
           transform: translateY(-50%);
 }
 
-.form__input:focus ~ .form__icon {
+.form__input:focus .form__icon {
   fill: #2196f3;
-}
-
-.form__input:focus {
-  border: 1px solid #2196f3;
 }
 
 .textarea {
@@ -979,17 +984,18 @@ a {
   border-radius: 2px;
 }
 
-.checkbox__input:checked + .checkbox__icon {
+.checkbox__input:checked .checkbox__icon {
   background-image: url(../image/icon-check.svg);
   background-color: #2196f3;
   border: none;
 }
 
-.checkbox__input:focus + .checkbox__icon {
+.checkbox__input:focus .checkbox__icon {
   border-color: #2196f3;
 }
 
 .checkbox__link {
+  font-family: roboto, sans-serif;
   font-weight: 400px;
   font-size: 14px;
   line-height: 24px;
@@ -1003,6 +1009,7 @@ a {
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
+  font-family: roboto, sans-serif;
   display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1047,7 +1054,7 @@ a {
 
 .portfolio-button__text {
   text-decoration: none;
-  font-family: inherit;
+  font-family: roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -1063,17 +1070,16 @@ a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-buttons__item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.portfolio-button__text:hover,
-.portfolio-button__text:focus {
+.portfolio-button__text:hover, .portfolio-button__text:focus {
   background-color: #188ce8;
   text-decoration: none;
   color: #ffffff;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-buttons__item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .portfolio-box {
@@ -1095,20 +1101,35 @@ a {
       flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .portfolio-box__link {
+  font-family: roboto, sans-serif;
   text-decoration: none;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-decoration: none;
-  display: block;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-box__link:hover, .portfolio-box__link:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .gallery-card {
@@ -1124,6 +1145,7 @@ a {
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.03em;
+  font-family: roboto, sans-serif;
   padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   bottom: -100%;
@@ -1138,24 +1160,22 @@ a {
           transform: translateY(-100%);
 }
 
-.portfolio-box__link:hover,
-.portfolio-box__link:focus {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .card-content {
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   text-decoration: none;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .card-content__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  font-family: roboto, sans-serif;
   letter-spacing: 0.06em;
   color: #212121;
   text-decoration: none;
@@ -1165,8 +1185,17 @@ a {
 .card-content__text {
   font-size: 16px;
   font-weight: 400;
+  font-family: roboto, sans-serif;
   line-height: 1.87;
   color: #757575;
+}
+
+.body {
+  font-family: roboto, sans-serif;
+  background: white;
+  font-size: 14px;
+  color: #757575;
+  letter-spacing: 0.03em;
 }
 
 .container {

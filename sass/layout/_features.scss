@@ -35,20 +35,23 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   color:  $second-color;
-
+  font-family:  $textPrimary;
   margin-bottom: 10px;
   margin-right: 30px;
 }
 
-.features__item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .features-box__text {
   color:  $primery-color;
   font-weight: 400;
   line-height: 1.1;
+  font-family:  $textPrimary;
 }
 .features__item {
   width: 270px;
   height: 101px;
+
+    &:not(:last-child) {
+    margin-right: 30px;
+}
 }

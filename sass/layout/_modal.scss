@@ -47,9 +47,10 @@
   justify-content: center;
   align-items: center;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal__btn-close:focus{
+
+    &:focus{
   fill: #188ce8;
+  }
 }
 
 .modal__title {
@@ -60,7 +61,7 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: rgba(33, 33, 33, 1);
-
+  font-family:  $textPrimary;
 }
 /* Форма */
 
@@ -79,6 +80,7 @@ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .form__label{
 font-weight: normal;
+font-family:  $textPrimary;
 font-size: 12px;
 line-height: 14px;
 letter-spacing: 0.01em;
@@ -105,6 +107,10 @@ color: #757575;
   padding: 0 15px 0 42px;
   outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus{
+  border: 1px solid  $accent-color;
+  }
 }
 .form__icon{
 position: absolute;
@@ -112,16 +118,12 @@ top: 50%;
 left: 12px;
 transform: translateY(-50%);
 
-}
-.form__input:focus ~.form__icon{
+  .form__input:focus &{
   fill:  $accent-color;
+  }
+
 }
 
-
-
-.form__input:focus{
-  border: 1px solid  $accent-color;
-}
 .textarea{
 
 margin-bottom: 28px;
@@ -143,19 +145,21 @@ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
  margin-left: auto;
  outline: none;
  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);    
-}
 
-.form__input-textarea:focus{
+  &:focus{
   border: 1px solid  $accent-color;
-}
-.form__input-textarea::placeholder {
-font-weight: normal;
-font-size: 12px;
-line-height: 14px;
-letter-spacing: 0.01em;
+  }
 
-color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+  }
 }
+
 /* checkbox  */
 
 .checkbox__label{
@@ -176,6 +180,8 @@ color: rgba(117, 117, 117, 0.5);
   clip: rect(0 0 0 0);
  overflow: hidden;
 
+ 
+
 }
 .checkbox__icon{
   position: absolute;
@@ -187,17 +193,22 @@ color: rgba(117, 117, 117, 0.5);
   margin-left: -25px;
   border: 2px solid   black;
   border-radius: 2px;
-}
-.checkbox__input:checked + .checkbox__icon{
+
+  .checkbox__input:checked &{
   background-image: url(../image/icon-check.svg);
   background-color:  $accent-color;
   border: none;
-}
-.checkbox__input:focus + .checkbox__icon{
+  }
+
+.checkbox__input:focus &{
   border-color:  $accent-color;
+  }
 }
 
+
+
 .checkbox__link{
+font-family:  $textPrimary;
 font-weight: 400px;
 font-size: 14px;
 line-height: 24px;
@@ -211,7 +222,7 @@ color:  $accent-color;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
-
+  font-family:  $textPrimary;
   display: block;
   align-items: center;
   text-align: center;

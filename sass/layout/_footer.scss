@@ -33,6 +33,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 1.7;
+  font-family:  $textPrimary;
 }
 
 .adress__item:not(:last-child) {
@@ -45,14 +46,16 @@
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 9px;
+  font-family:  $textPrimary;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-contacts:hover,
-.footer-contacts:focus {
+
+
+    &:hover,
+    &:focus {
   color:  $accent-color ;
 }
-
+}
 /* join  */
 
 .join-box {
@@ -65,6 +68,7 @@
   color:  $whitw-color ;
   font-style: normal;
   margin-bottom: 20px;
+  font-family:  $textPrimary;
 }
 
 .join-social {
@@ -87,11 +91,13 @@
   width: 44px;
   height: 44px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    background-color:  $accent-color ;
 }
-.join-social__link:hover,
-.join-social__link:focus {
-  background-color:  $accent-color ;
 }
+
 .join-social__icon {
   fill:  $whitw-color  ;
   padding: 0;
@@ -125,6 +131,7 @@
   color:  $whitw-color  ;
   font-style: normal;
   margin-bottom: 20px;
+  font-family:  $textPrimary;
 }
 .footer-sibscribe__input {
   width: 358px;
@@ -137,6 +144,7 @@
   margin: 0;
   text-decoration: none;
   border: none;
+ font-family:  $textPrimary;
 }
 /* footer-btn  */
 .footer-btn {
@@ -158,6 +166,13 @@
   padding-left: 29px;
   text-decoration: none;
   border: none;
+  font-family:  $textPrimary;
+
+    &:hover,
+    &:focus {
+    background-color: #188ce8;
+    text-decoration: none;
+}
 }
 .footer-btn__icon {
   position: absolute;
@@ -167,8 +182,4 @@
   transform: translateY(-50%);
 }
 
-.footer-btn:hover,
-.footer-btn:focus {
-  background-color: #188ce8;
-  text-decoration: none;
-}
+
